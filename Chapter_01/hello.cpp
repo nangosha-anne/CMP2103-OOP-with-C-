@@ -1,10 +1,10 @@
 // This program outputs the message "Hello, World!" to the monitor
-
-import std; // gain access to the C++ standard library
+#include <iostream> // gain access to the C++ standard library
+using namespace std;
 
 int main() // C++ programs start by executing the function main
 {
-    std::cout << "Hello, World!\n"; // output "Hello, Wor ld!"
+    cout << "Hello, World!\n"; // output "Hello, Wor ld!"
     return 0; // Means the program executed successfully. It can be omitted.
 }
 
