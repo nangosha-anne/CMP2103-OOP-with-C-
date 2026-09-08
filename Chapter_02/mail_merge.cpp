@@ -91,7 +91,7 @@ int main()
     cout << "We look forward to welcoming you to the Makerere University.\n\n";
     cout << "Yours sincerely,\n\n\n";
     cout << "John Doe\n";
-    cout << "Registrar\n";
+    cout << "Registra\n";
 
     return 0;
 }
