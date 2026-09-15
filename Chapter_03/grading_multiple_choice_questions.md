@@ -26,3 +26,19 @@ The key is stored in a one-dimensional list:
 Write a program that grades the test and displays the result. To do this, the program compares each
 student’s answers with the key, counts the number of correct answers, and displays it.
 #include <iostream>
+
+## OOP Concepts Used
+
+The implementation is procedural and does not define student or question classes. It uses arrays as data abstractions; a `Student` object could encapsulate answers and scores in a larger OOP design.
+
+## Algorithm
+
+1. Store the students' answers in a two-dimensional array and the key in a one-dimensional array.
+2. Visit each student and compare each answer with the matching key entry.
+3. Count matches and display the total for that student.
+
+## Possible Error Points
+
+- Student and question loop bounds must match the array dimensions.
+- The key and student answers must use the same question indexes.
+- Character case and array indexing errors can produce incorrect scores.

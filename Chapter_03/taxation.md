@@ -31,3 +31,22 @@ Enter the residence status: 0
 Enter the taxable income: 4,000,000
 Tax is 118000
 ```
+
+## OOP Concepts Used
+
+The tax calculation is implemented procedurally and does not define a taxpayer or tax-bracket class. A `Taxpayer` object with a calculation method could encapsulate residence status, income, and bracket rules in a larger system.
+
+## Algorithm
+
+1. Read residence status and chargeable income.
+2. Select the resident or non-resident tax rules.
+3. Determine the applicable income bracket and calculate each progressive portion.
+4. Add the high-income surcharge when income exceeds UGX 120,000,000.
+5. Display the calculated tax.
+
+## Possible Error Points
+
+- The boundary values must be assigned to the correct bracket.
+- Resident and non-resident rates and fixed additions must not be mixed.
+- Reject invalid residence statuses and negative income.
+- Use numeric input without comma separators unless the program explicitly parses them.

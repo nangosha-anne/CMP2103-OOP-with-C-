@@ -49,3 +49,21 @@ int getSize(long long d);
 
 //Return the first k number of digits from number. If the number of digits in number is less than k, return number.\
 long long getPrefix(long long number, int k);
+
+## OOP Concepts Used
+
+The solution is procedural and does not define a credit-card class. Its focused validation functions provide decomposition and limited information hiding; a `CreditCard` class could encapsulate the number and validation operations in a fuller OOP design.
+
+## Algorithm
+
+1. Read the card number and check that it has 13 to 16 digits.
+2. Verify that it begins with an accepted card-network prefix.
+3. Apply the Luhn checksum by doubling alternating digits and adding the remaining digits.
+4. Report valid when the checksum total is divisible by ten.
+
+## Possible Error Points
+
+- Treating the card number as an integer loses leading zeroes.
+- Counting positions from the wrong end changes the Luhn result.
+- Prefix and length checks must be applied before accepting the checksum.
+- Input outside the range of `long long` cannot be processed correctly.
